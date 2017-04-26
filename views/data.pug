@@ -1,0 +1,13 @@
+html
+  head
+    title= title
+  body
+    h1 Medical Data
+    table
+      tr
+        th Temperature
+        th Heart Rate
+      - for (var x = 0; x < rows.length; x++)
+        tr
+          td= rows[x].temperature
+          td= rows[x].heart_rate
