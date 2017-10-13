@@ -11,9 +11,6 @@ var connection = mysql.createConnection({
 connection.connect();
 
 var queryString = 'SELECT * FROM Readings';
- 
-
-
 
 function getData(callback) {
     connection.query(queryString, function(err, rows, fields) {
