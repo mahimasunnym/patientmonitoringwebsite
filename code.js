@@ -9,7 +9,7 @@ var connection = mysql.createConnection({
   database : 'MedicalData'
 });
 connection.connect();
-//bbbbb
+
 var queryString = 'SELECT * FROM Readings';
 //getdata
 function getData(callback) {
